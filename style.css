@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.poster {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.shape-grid {
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.shape {
+    width: 160px;
+    height: 160px;
+    border-radius: 80% 80% 0 0;
+    opacity: 0.8;
+    position: absolute;
+    mix-blend-mode: multiply;
+}
+.blue {
+    background-color: rgb(0, 225, 255);
+}
+.purple {
+    background-color: rgb(115, 0, 203);
+}
+.pink {
+    background-color: palevioletred;
+}
+.navy {
+    background-color: rgb(0, 0, 177);
+}
+.top-left {
+    top: 100px;
+    left: 10px;
+}
+.top-center {
+    top: 130px;
+    right: 100px;
+    transform: rotate(90deg);
+}
+.top-right {
+    top: 40px;
+    left: 200px;
+}
+.bottom-left {
+    top: 40px;
+    right: 200px;
+    transform: rotate(180deg);
+}
+.circle-decor {
+    position: relative;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.circle1 {
+    width: 50px;
+    height: 25px;
+    top: -80px;
+    left: 20px;
+    background-color: blue;
+    overflow: hidden;
+    border-radius: 50px 50px 0 0;
+}
+.circle2 {
+    width: 40px;
+    height: 40px;
+    top: -75px;
+    left: 25px;
+    background-color: rgb(1, 1, 21);
+    position: absolute;
+    opacity: 1;
+    border-radius: 50%;
+}
+.circle3 {
+    width: 60px;
+    height: 60px;
+    top: -380px;
+    right: -300px;
+    background-color: rgb(2, 123, 129);
+    opacity: 1;
+    border-radius: 50%;
+    border-style: double double hidden hidden;
+    opacity: 1;
+}
+.circle4 {
+    width: 30px;
+    height: 30px;
+    top: -450px;
+    left: 130px;
+    background-color: rgb(199, 99, 187);
+    opacity: 1;
+    border-radius: 50%;
+}
+.circle5 {
+    width: 40px;
+    height: 40px;
+    top: -228px;
+    left: 300px;
+    background-color: rgb(170, 206, 78);
+    opacity: 1;
+    border-radius: 50%;
+}
+.circle6 {
+    width: 40px;
+    height: 20px;
+    top: -103px;
+    left: 310px;
+    background-color: blue;
+    overflow: hidden;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    transform: rotate(90deg);
+    border-style: dashed;
+    opacity: 0.7;
+}
+.circle7 {
+    width: 30px;
+    height: 15px;
+    top: -500px;
+    left: 10px;
+    background-color: rgb(255, 60, 0);
+    overflow: hidden;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(330deg);
+    border-style: dashed;
+}
+.poster-text {
+position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: #333;
+  font-style: italic;
+  opacity: 0.7;
+}
